@@ -1,5 +1,5 @@
-#### A simple connection pool
-[toc]
+#### A Simple Connection Pool
+
 [https://github.com/Fickle519/simple-connection-pool.git]
 Author: Xuanhe Er from Chengdu University of Information Technology(CUIT)
 ##### Question
