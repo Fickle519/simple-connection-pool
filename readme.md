@@ -105,3 +105,5 @@ public class UserMapper{
 ###### future
 
 1. convert the DAO layer class into a interface through dynamic proxy method to further reduce the amount of code developers.Put annotations on methods on this interface's methods.
+###### Ciation
+SrpingJDBC
