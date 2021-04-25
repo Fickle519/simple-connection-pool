@@ -9,23 +9,9 @@ import java.sql.ResultSet;
 public class TestConnPool {
 
     public static void main(String[] args) {
-        try {
-            ConnectionPool connectionPool = ConnectionPool.getInstance();
-            Connection connection = connectionPool.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("select * from score_info");
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()){
-                System.out.print(resultSet.getString("sid")+" ");
-                System.out.print(resultSet.getString("chinese")+" ");
-                System.out.print(resultSet.getString("math")+" ");
-                System.out.println(resultSet.getString("english")+" ");
-            }
-            resultSet.close();
-            preparedStatement.close();
-            connection.close();
-
-        } catch (Exception e) {
-            e.printStackTrace();
+        TestConnRunner runner = new TestConnRunner();
+        for (int i = 0; i < 6; i++) {
+            new Thread(runner).start();
         }
     }
 }

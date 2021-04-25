@@ -27,7 +27,7 @@ public class ConnectionPool {
     }
 
 
-    public void initPoolConnection(){
+    private void initPoolConnection(){
         Integer minCount = Integer.parseInt(ConfigClass.getConnConfigValue("minConnection"));
         if(pool!=null && pool.size()!=0){
             throw new InitConnectionPoolException("initilize ConnectionPool occurred nested Exception:the pool contains available connections");
