@@ -93,7 +93,7 @@ public class UserMapper{
 
 
 ###### Divise
-
+![ORM.png](https://i.loli.net/2021/04/25/VPNYZzcOMySX4Ul.png)
 1. using template schema to diminish code redundancy
 2. Convert multi-line JDBC operations to one line(update,insert,delete,selectOne,selectList)
 3. using PreparedStatement to avoid SQL injection attack
